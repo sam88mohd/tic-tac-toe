@@ -6,7 +6,8 @@ function makeBox() {
 
   for (let i = 0; i < 9; i++) {
     const cell = document.createElement("div");
-    outerBoxElement.appendChild(cell).className = "inner-box";
+    cell.classList.add("inner-box");
+    outerBoxElement.appendChild(cell);
   }
 }
 
