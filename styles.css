@@ -1,3 +1,8 @@
+:root {
+  --grid-rows: 1;
+  --grid-cols: 1;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +12,7 @@
 body {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 header {
@@ -17,6 +23,20 @@ header {
   border-bottom: 1px solid rgb(102, 100, 100);
 }
 
-.body {
+.content {
   flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer-box {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+}
+
+.inner-box {
+  border: 1px solid black;
+  padding: 50px;
 }
