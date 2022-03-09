@@ -31,6 +31,8 @@ header {
 }
 
 .outer-box {
+  width: 400px;
+  height: 400px;
   display: grid;
   grid-template-columns: repeat(var(--grid-cols), 1fr);
   grid-template-rows: repeat(var(--grid-rows), 1fr);
@@ -38,5 +40,8 @@ header {
 
 .inner-box {
   border: 1px solid black;
-  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
 }
